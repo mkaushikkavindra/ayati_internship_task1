@@ -420,6 +420,16 @@ footer figure{
   border-radius:50px;
 }
 
+.blogtext {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.blogtext.expanded {
+  -webkit-line-clamp: unset;
+}
 
 
 @media (max-width: 768px) {
