@@ -1,0 +1,323 @@
+body{
+    font-family: Arial, sans-serif;
+    margin:auto;
+}
+
+ul{
+    list-style:none;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+
+nav a {
+    text-decoration:none;
+    color:black;
+}
+
+nav ul li a {
+    font-size:16px;
+    letter-spacing: 2px;
+}
+
+nav img{
+    height:40px;
+}
+
+#title-section{
+    padding: 20px 40px;
+    background-color: #f5f5f5;
+}
+#title-section div{
+    
+    max-width:800px;
+    margin:0 auto;
+    
+}
+
+#title-section h1{
+    font-family:Arial, sans-serif;
+    font-weight:900;
+    color:rgb(99, 99, 99);
+    font-size:120px;
+    text-align:center;
+    letter-spacing:7px;
+}
+#titlefirst{
+    font-size:18px;
+    color:gray;
+    letter-spacing:2px;
+}
+
+#titlesecond{
+    font-size:16px;
+    letter-spacing:1px;
+    color:gray;
+    text-align:right;
+    font-weight:lighter;
+}
+
+article{
+    display:grid;
+    align-items: center;
+    grid-template-columns:1fr 1fr;
+    gap:0px;
+    margin-left:160px;
+    margin-right:160px;
+}
+article:nth-child(even) figure {
+    grid-column: 2;
+    grid-row: 1;
+}
+article:nth-child(even) div {
+    grid-column: 1;
+    grid-row: 1;
+    text-align:left;
+    justify-self: end;
+
+}
+
+article ul{
+    display:flex;
+    gap: 35px;
+}
+
+article ul li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+article div{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+    padding: 0px 40px;
+    justify-self:start;
+    max-width: 500px;
+}
+
+article header h2 {
+    font-size:48px;
+}
+
+article img{
+    height:500px;
+    width:500px;
+    object-fit:cover;
+    border-radius:30px;
+}
+
+
+#paging ul{
+    margin:auto;
+}
+
+#paging ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+    font-weight: 700;
+}
+
+#paging ul li a.active{
+    background:black;
+    color:white;
+}
+
+#newsletter div{
+    max-width: 500px;
+    margin: 20px auto;
+    align-items:center;
+    text-align:center;
+}
+
+#newsletter {
+    background-color:#ffc547;
+    padding: 20px 50px;
+}
+
+#newsletter h4{
+    font-weight:lighter;
+}
+
+footer{
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 30px 30px;
+    gap:50px;
+    background:#dedddd;
+}
+
+footer section{
+    flex: 1;
+    min-width: 200px;
+}
+
+footer article{
+    display:flex;
+    align-items:center;
+    gap:0;
+}
+
+footer img{
+    width: 130px;
+    height: 130px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+footer article div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  max-width:180px;
+  padding : 0 0px;
+}
+
+footer article ul {
+  display: flex;
+  font-size: 11px;
+  color: #303030;
+}
+
+footer article h3{
+    font-size:17px;
+}
+
+footer article a{
+    font-size:14px;
+}
+
+#recentposts article{
+    margin:0;
+}
+
+#explore ul{
+    list-style:circle;
+}
+
+article ul{
+    padding:0;
+    margin:0;
+    display: flex;
+}
+
+#havequestions li{
+    display: flex;
+}
+
+.newsletteremail{
+    border:none;
+    display: flex;
+    align-items: stretch;
+    overflow: hidden;
+    padding:5px;
+}
+
+.newsletteremail input{
+    flex: 1;
+    border: none;
+    padding: 15px;
+    outline: none;
+    background: #eee;
+}
+
+#subscribe{
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.newsletteremail input,
+#subscribe{
+  border: none;
+}
+
+footer ul li {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+footer ul li span svg {
+  width: 25px;
+  height: 25px;
+}
+
+#explore li {
+    margin-bottom:7%;
+}
+
+.learnmore{
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+footer .learnmore{
+    display: inline-block;
+    font-size: 12px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.learnmore::after {
+  content: "→";
+  margin-left: 10px;
+  opacity: 0;
+  transition: all 0.3s ease;
+  transform: translateX(-5px);
+
+}
+
+.learnmore:hover {
+  color: #888;
+  letter-spacing: 2px;
+  opacity: 0.8;
+  transform: translateX(0);
+}
+
+.learnmore:hover::after {
+  opacity: 1;
+  margin-left: 12px;
+}
+
+footer a:hover{
+    color:#888;
+    letter-spacing:2px;
+    opacity:0.8;
+    transition: all 0.3s ease;
+}
