@@ -33,18 +33,16 @@ function showPage(page) {
 }
 showPage(1);
 
-// button click
 buttons.forEach((btn, index) => {
   btn.addEventListener("click", function (e) {
     e.preventDefault();
 
-    // remove active from all
     buttons.forEach(b => b.classList.remove("active"));
 
-    // add active to clicked
     this.classList.add("active");
 
-    // show page
     showPage(index + 1);
+
+    document.querySelector("main section").scrollIntoView({behavior: "smooth"});
   });
 });
