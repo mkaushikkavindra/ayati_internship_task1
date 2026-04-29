@@ -1,6 +1,7 @@
 body{
     font-family: Arial, sans-serif;
     margin:auto;
+    background:#dce8e438;
 }
 
 ul{
@@ -46,7 +47,7 @@ nav img{
 
 #title-section{
     padding: 20px 40px;
-    background-color: #f5f5f5;
+    background-color: #f0eded5e;
 }
 #title-section div{
     
@@ -100,6 +101,11 @@ article:nth-child(even) div {
 article ul{
     display:flex;
     gap: 35px;
+}
+
+#recentposts article ul{
+    display:flex;
+    gap:15px;
 }
 
 article ul li{
@@ -321,6 +327,64 @@ footer a:hover{
     opacity:0.8;
     transition: all 0.3s ease;
 }
+
+#recentposts svg {
+  width: 14px;
+  height: 14px;
+}
+
+nav ul li a {
+  padding: 16px 32px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+nav ul li a:hover {
+  background-color: black;
+  color: white;
+}
+
+figure{
+    position:relative;
+    overflow:hidden;
+}
+
+figure::after{
+    content:"VIEW POST";
+    position:absolute;
+    top: 100%;
+    left: 0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.6);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    font-size:18px;
+    letter-spacing:2px;
+    transition:0.3s ease;
+    border-radius:30px;
+}
+
+footer figure::after{
+    font-size:12px;
+    border-radius:10px;
+}
+
+figure:hover::after{
+    top:0px;
+    left:0;
+}
+
+figure img{
+    width:100%;
+}
+
+footer figure{
+    width:130px;
+    height:130px;
+}
+
 
 
 @media (max-width: 768px) {
@@ -1173,6 +1237,366 @@ footer a:hover{
   footer ul li span svg {
     width: 22px;
     height: 22px;
+  }
+
+}
+
+@media (max-width: 576px) {
+
+  /* ===== GENERAL ===== */
+  body {
+    padding: 0 18px;
+  }
+
+  /* ===== NAVBAR ===== */
+  nav {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  nav ul {
+    gap: 18px;
+    justify-content: center;
+  }
+
+  nav ul li a {
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+
+  nav img {
+    height: 40px;
+  }
+
+  /* ===== HERO ===== */
+  #title-section {
+    padding: 25px;
+  }
+
+  #title-section h1 {
+    font-size: 58px;
+    letter-spacing: 3px;
+  }
+
+  #titlefirst {
+    font-size: 16px;
+  }
+
+  #titlesecond {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  /* ===== BLOG ARTICLES ===== */
+  article {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin: 30px 0;
+  }
+
+  article div {
+    padding: 0;
+    max-width: 100%;
+  }
+
+  article img {
+    width: 100%;
+    height: auto;
+    border-radius: 24px;
+  }
+
+  article header h2 {
+    font-size: 30px;
+    line-height: 1.3;
+  }
+
+  article p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  article ul {
+    flex-wrap: wrap;
+    gap: 14px;
+    font-size: 13px;
+  }
+
+  /* remove alternating layout */
+  article:nth-child(even) figure,
+  article:nth-child(even) div {
+    grid-column: auto;
+    grid-row: auto;
+    justify-self: start;
+  }
+
+  /* ===== PAGINATION ===== */
+  #paging ul {
+    gap: 12px;
+    margin: 25px 0;
+  }
+
+  #paging ul li a {
+    width: 36px;
+    height: 36px;
+    font-size: 14px;
+  }
+
+  /* ===== NEWSLETTER ===== */
+  #newsletter {
+    padding: 25px;
+  }
+
+  #newsletter h3 {
+    font-size: 22px;
+  }
+
+  #newsletter h4 {
+    font-size: 16px;
+  }
+
+  /* keep inline (still enough space here) */
+  .newsletteremail {
+    flex-direction: row;
+  }
+
+  .newsletteremail input {
+    min-width: 0;
+  }
+
+  #subscribe {
+    white-space: nowrap;
+    padding: 12px 25px;
+    font-size: 14px;
+  }
+
+  /* ===== FOOTER ===== */
+  footer {
+    flex-direction: column;
+    gap: 35px;
+    padding: 25px;
+  }
+
+  footer section {
+    min-width: 100%;
+  }
+
+  footer h3 {
+    font-size: 18px;
+  }
+
+  footer p {
+    font-size: 14px;
+  }
+
+  /* recent posts */
+  footer article {
+    gap: 15px;
+    align-items: flex-start;
+  }
+
+  footer img {
+    width: 90px;
+    height: 90px;
+  }
+
+  footer article div {
+    max-width: 100%;
+  }
+
+  footer article h3 {
+    font-size: 16px;
+  }
+
+  footer article ul {
+    font-size: 12px;
+    gap: 8px;
+  }
+
+  /* contact icons */
+  footer ul li span svg {
+    width: 22px;
+    height: 22px;
+  }
+
+}
+
+@media (max-width: 640px) {
+
+  /* ===== GENERAL ===== */
+  body {
+    padding: 0 20px;
+  }
+
+  /* ===== NAVBAR ===== */
+  nav {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  nav ul {
+    gap: 20px;
+    justify-content: center;
+  }
+
+  nav ul li a {
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+
+  nav img {
+    height: 42px;
+  }
+
+  /* ===== HERO ===== */
+  #title-section {
+    padding: 30px;
+  }
+
+  #title-section h1 {
+    font-size: 65px;
+    letter-spacing: 4px;
+  }
+
+  #titlefirst {
+    font-size: 17px;
+  }
+
+  #titlesecond {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  /* ===== BLOG ARTICLES (MAIN CHANGE) ===== */
+  article {
+    grid-template-columns: 1fr;   /* collapse layout */
+    gap: 35px;
+    margin: 30px 0;
+  }
+
+  article div {
+    padding: 0;
+    max-width: 100%;
+  }
+
+  article img {
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+  }
+
+  article header h2 {
+    font-size: 32px;
+    line-height: 1.3;
+  }
+
+  article p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  article ul {
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 13px;
+  }
+
+  /* remove alternating layout */
+  article:nth-child(even) figure,
+  article:nth-child(even) div {
+    grid-column: auto;
+    grid-row: auto;
+    justify-self: start;
+  }
+
+  /* ===== PAGINATION ===== */
+  #paging ul {
+    gap: 12px;
+    margin: 30px 0;
+  }
+
+  #paging ul li a {
+    width: 38px;
+    height: 38px;
+    font-size: 14px;
+  }
+
+  /* ===== NEWSLETTER ===== */
+  #newsletter {
+    padding: 30px;
+  }
+
+  #newsletter h3 {
+    font-size: 22px;
+  }
+
+  #newsletter h4 {
+    font-size: 16px;
+  }
+
+  /* keep inline (still enough width) */
+  .newsletteremail {
+    flex-direction: row;
+  }
+
+  .newsletteremail input {
+    min-width: 0;
+  }
+
+  #subscribe {
+    white-space: nowrap;
+    padding: 14px 28px;
+    font-size: 14px;
+  }
+
+  /* ===== FOOTER ===== */
+  footer {
+    flex-direction: column;
+    gap: 40px;
+    padding: 30px;
+  }
+
+  footer section {
+    min-width: 100%;
+  }
+
+  footer h3 {
+    font-size: 20px;
+  }
+
+  footer p {
+    font-size: 15px;
+  }
+
+  /* recent posts */
+  footer article {
+    gap: 15px;
+    align-items: flex-start;
+  }
+
+  footer img {
+    width: 100px;
+    height: 100px;
+  }
+
+  footer article div {
+    max-width: 100%;
+  }
+
+  footer article h3 {
+    font-size: 17px;
+  }
+
+  footer article ul {
+    font-size: 13px;
+    gap: 10px;
+  }
+
+  /* contact icons */
+  footer ul li span svg {
+    width: 24px;
+    height: 24px;
   }
 
 }
