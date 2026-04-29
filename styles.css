@@ -321,3 +321,858 @@ footer a:hover{
     opacity:0.8;
     transition: all 0.3s ease;
 }
+
+
+@media (max-width: 768px) {
+
+  body {
+    padding: 0 15px;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  nav ul {
+    gap: 15px;
+  }
+
+  #title-section {
+    padding: 20px;
+  }
+
+  #title-section h1 {
+    font-size: 55px;
+    letter-spacing: 3px;
+  }
+
+  #titlesecond {
+    text-align: center;
+  }
+
+  article {
+    grid-template-columns: 1fr;   
+    margin: 20px 0;       
+    gap: 20px;
+  }
+
+  article:nth-child(even) figure,
+  article:nth-child(even) div {
+    grid-column: auto;
+    grid-row: auto;
+    justify-self: start;
+  }
+
+  article div {
+    padding: 0;
+    max-width: 100%;
+  }
+
+  article img {
+    width: 100%;
+    height: auto;
+  }
+
+  article ul {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  article header h2 {
+    font-size: 28px;
+  }
+
+  #paging ul {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+  }
+
+  #paging ul li a {
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+  }
+
+  #newsletter {
+    padding: 20px;
+  }
+
+  .newsletteremail {
+    flex-direction: row;
+  }
+
+
+  #subscribe {
+    white-space: nowrap;  
+    width:100%;
+    justify-content: center;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+  }
+
+  footer article {
+    gap: 15px;
+    align-items: flex-start;
+  }
+
+  footer img {
+    width: 80px;
+    height: 80px;
+  }
+
+  footer article div {
+    max-width: 100%;
+  }
+
+}
+
+
+@media (max-width: 320px) {
+
+  /* ===== GENERAL ===== */
+  body {
+    padding: 0 10px;
+  }
+
+  /* ===== NAVBAR ===== */
+  nav {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  nav ul {
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav ul li a {
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+
+  nav img {
+    height: 30px;
+  }
+
+  /* ===== HERO ===== */
+  #title-section {
+    padding: 15px;
+  }
+
+  #title-section h1 {
+    font-size: 32px;
+    letter-spacing: 1px;
+  }
+
+  #titlefirst {
+    font-size: 14px;
+  }
+
+  #titlesecond {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  /* ===== BLOG ARTICLES ===== */
+  article {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin: 15px 0;
+  }
+
+  article div {
+    padding: 0;
+    max-width: 100%;
+  }
+
+  article img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+  }
+
+  article header h2 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  article p {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  article ul {
+    flex-wrap: wrap;
+    gap: 8px;
+    font-size: 11px;
+  }
+
+  article ul li {
+    gap: 5px;
+  }
+
+  /* remove alternating layout */
+  article:nth-child(even) figure,
+  article:nth-child(even) div {
+    grid-column: auto;
+    grid-row: auto;
+    justify-self: start;
+  }
+
+  /* ===== PAGINATION ===== */
+  #paging ul {
+    gap: 5px;
+    margin: 15px 0;
+  }
+
+  #paging ul li a {
+    width: 25px;
+    height: 25px;
+    font-size: 10px;
+  }
+
+  /* ===== NEWSLETTER ===== */
+  #newsletter {
+    padding: 15px;
+  }
+
+  #newsletter h3 {
+    font-size: 16px;
+  }
+
+  #newsletter h4 {
+    font-size: 12px;
+  }
+
+
+  .newsletteremail input {
+    padding: 10px;
+    font-size: 12px;
+  }
+
+
+
+  .newsletteremail {
+    flex-direction: row;
+  }
+
+
+  #subscribe {
+    white-space: nowrap;  
+    width:100%;
+    justify-content: center;
+  }
+
+  /* ===== FOOTER ===== */
+  footer {
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px;
+  }
+
+  footer section {
+    min-width: 100%;
+  }
+
+  footer h3 {
+    font-size: 14px;
+  }
+
+  footer p {
+    font-size: 12px;
+  }
+
+  /* recent posts */
+  footer article {
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  footer img {
+    width: 60px;
+    height: 60px;
+  }
+
+  footer article div {
+    max-width: 100%;
+  }
+
+  footer article h3 {
+    font-size: 14px;
+  }
+
+  footer article ul {
+    font-size: 10px;
+    gap: 5px;
+  }
+
+  /* contact icons */
+  footer ul li span svg {
+    width: 18px;
+    height: 18px;
+  }
+
+}
+
+
+
+@media (max-width: 375px) {
+
+  /* ===== GENERAL ===== */
+  body {
+    padding: 0 12px;
+  }
+
+  /* ===== NAVBAR ===== */
+  nav {
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px;
+  }
+
+  nav ul {
+    gap: 10px;
+    justify-content: center;
+  }
+
+  nav ul li a {
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+
+  nav img {
+    height: 35px;
+  }
+
+  /* ===== HERO ===== */
+  #title-section {
+    padding: 15px;
+  }
+
+  #title-section h1 {
+    font-size: 40px;
+    letter-spacing: 2px;
+  }
+
+  #titlefirst {
+    font-size: 15px;
+  }
+
+  #titlesecond {
+    font-size: 13px;
+    text-align: center;
+  }
+
+  /* ===== BLOG ARTICLES ===== */
+  article {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin: 20px 0;
+  }
+
+  article div {
+    padding: 0;
+    max-width: 100%;
+  }
+
+  article img {
+    width: 100%;
+    height: auto;
+    border-radius: 18px;
+  }
+
+  article header h2 {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+
+  article p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  article ul {
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 12px;
+  }
+
+  article ul li {
+    gap: 6px;
+  }
+
+  /* remove alternating layout */
+  article:nth-child(even) figure,
+  article:nth-child(even) div {
+    grid-column: auto;
+    grid-row: auto;
+    justify-self: start;
+  }
+
+  /* ===== PAGINATION ===== */
+  #paging ul {
+    gap: 8px;
+    margin: 20px 0;
+  }
+
+  #paging ul li a {
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+  }
+
+  /* ===== NEWSLETTER ===== */
+  #newsletter {
+    padding: 20px;
+  }
+
+  #newsletter h3 {
+    font-size: 18px;
+  }
+
+  #newsletter h4 {
+    font-size: 14px;
+  }
+
+.newsletteremail {
+    flex-direction: row;
+  }
+
+
+  #subscribe {
+    white-space: nowrap;  
+    width:100%;
+    justify-content: center;
+  }
+
+  .newsletteremail input {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+
+  /* ===== FOOTER ===== */
+  footer {
+    flex-direction: column;
+    gap: 25px;
+    padding: 20px;
+  }
+
+  footer section {
+    min-width: 100%;
+  }
+
+  footer h3 {
+    font-size: 16px;
+  }
+
+  footer p {
+    font-size: 13px;
+  }
+
+  /* recent posts */
+  footer article {
+    gap: 12px;
+    align-items: flex-start;
+  }
+
+  footer img {
+    width: 70px;
+    height: 70px;
+  }
+
+  footer article div {
+    max-width: 100%;
+  }
+
+  footer article h3 {
+    font-size: 15px;
+  }
+
+  footer article ul {
+    font-size: 11px;
+    gap: 6px;
+  }
+
+  /* contact icons */
+  footer ul li span svg {
+    width: 20px;
+    height: 20px;
+  }
+
+}
+
+
+@media (max-width: 425px) {
+
+  /* ===== GENERAL ===== */
+  body {
+    padding: 0 14px;
+  }
+
+  /* ===== NAVBAR ===== */
+  nav {
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px;
+  }
+
+  nav ul {
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  nav ul li a {
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+
+  nav img {
+    height: 36px;
+  }
+
+  /* ===== HERO ===== */
+  #title-section {
+    padding: 18px;
+  }
+
+  #title-section h1 {
+    font-size: 48px;
+    letter-spacing: 2px;
+  }
+
+  #titlefirst {
+    font-size: 16px;
+  }
+
+  #titlesecond {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  /* ===== BLOG ARTICLES ===== */
+  article {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    margin: 20px 0;
+  }
+
+  article div {
+    padding: 0;
+    max-width: 100%;
+  }
+
+  article img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+  }
+
+  article header h2 {
+    font-size: 26px;
+    line-height: 1.25;
+  }
+
+  article p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  article ul {
+    flex-wrap: wrap;
+    gap: 12px;
+    font-size: 12px;
+  }
+
+  /* remove alternating layout */
+  article:nth-child(even) figure,
+  article:nth-child(even) div {
+    grid-column: auto;
+    grid-row: auto;
+    justify-self: start;
+  }
+
+  /* ===== PAGINATION ===== */
+  #paging ul {
+    gap: 10px;
+    margin: 20px 0;
+  }
+
+  #paging ul li a {
+    width: 32px;
+    height: 32px;
+    font-size: 13px;
+  }
+
+  /* ===== NEWSLETTER ===== */
+  #newsletter {
+    padding: 20px;
+  }
+
+  #newsletter h3 {
+    font-size: 18px;
+  }
+
+  #newsletter h4 {
+    font-size: 14px;
+  }
+
+ 
+
+  .newsletteremail input {
+    min-width: 0;
+  }
+
+ .newsletteremail {
+    flex-direction: row;
+  }
+
+
+  #subscribe {
+    white-space: nowrap;  
+    width:100%;
+    justify-content: center;
+  }
+
+  /* ===== FOOTER ===== */
+  footer {
+    flex-direction: column;
+    gap: 25px;
+    padding: 20px;
+  }
+
+  footer section {
+    min-width: 100%;
+  }
+
+  footer h3 {
+    font-size: 16px;
+  }
+
+  footer p {
+    font-size: 13px;
+  }
+
+  /* recent posts */
+  footer article {
+    gap: 12px;
+    align-items: flex-start;
+  }
+
+  footer img {
+    width: 75px;
+    height: 75px;
+  }
+
+  footer article div {
+    max-width: 100%;
+  }
+
+  footer article h3 {
+    font-size: 15px;
+  }
+
+  footer article ul {
+    font-size: 11px;
+    gap: 6px;
+  }
+
+  /* contact icons */
+  footer ul li span svg {
+    width: 20px;
+    height: 20px;
+  }
+
+}
+
+
+@media (max-width: 480px) {
+
+  /* ===== GENERAL ===== */
+  body {
+    padding: 0 15px;
+  }
+
+  /* ===== NAVBAR ===== */
+  nav {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  nav ul {
+    gap: 15px;
+    justify-content: center;
+  }
+
+  nav ul li a {
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+
+  nav img {
+    height: 38px;
+  }
+
+  /* ===== HERO ===== */
+  #title-section {
+    padding: 20px;
+  }
+
+  #title-section h1 {
+    font-size: 52px;
+    letter-spacing: 2px;
+  }
+
+  #titlefirst {
+    font-size: 16px;
+  }
+
+  #titlesecond {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  /* ===== BLOG ARTICLES ===== */
+  article {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin: 25px 0;
+  }
+
+  article div {
+    padding: 0;
+    max-width: 100%;
+  }
+
+  article img {
+    width: 100%;
+    height: auto;
+    border-radius: 22px;
+  }
+
+  article header h2 {
+    font-size: 28px;
+    line-height: 1.25;
+  }
+
+  article p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  article ul {
+    flex-wrap: wrap;
+    gap: 12px;
+    font-size: 12px;
+  }
+
+  /* remove alternating layout */
+  article:nth-child(even) figure,
+  article:nth-child(even) div {
+    grid-column: auto;
+    grid-row: auto;
+    justify-self: start;
+  }
+
+  /* ===== PAGINATION ===== */
+  #paging ul {
+    gap: 10px;
+    margin: 25px 0;
+  }
+
+  #paging ul li a {
+    width: 34px;
+    height: 34px;
+    font-size: 13px;
+  }
+
+  /* ===== NEWSLETTER ===== */
+  #newsletter {
+    padding: 25px;
+  }
+
+  #newsletter h3 {
+    font-size: 20px;
+  }
+
+  #newsletter h4 {
+    font-size: 15px;
+  }
+
+  /* still keep inline at this size */
+  .newsletteremail {
+    flex-direction: row;
+  }
+
+  .newsletteremail input {
+    min-width: 0;
+  }
+
+  #subscribe {
+    white-space: nowrap;
+    padding: 12px 22px;
+    font-size: 14px;
+  }
+
+  /* ===== FOOTER ===== */
+  footer {
+    flex-direction: column;
+    gap: 30px;
+    padding: 25px;
+  }
+
+  footer section {
+    min-width: 100%;
+  }
+
+  footer h3 {
+    font-size: 18px;
+  }
+
+  footer p {
+    font-size: 14px;
+  }
+
+  /* recent posts */
+  footer article {
+    gap: 15px;
+    align-items: flex-start;
+  }
+
+  footer img {
+    width: 85px;
+    height: 85px;
+  }
+
+  footer article div {
+    max-width: 100%;
+  }
+
+  footer article h3 {
+    font-size: 16px;
+  }
+
+  footer article ul {
+    font-size: 12px;
+    gap: 8px;
+  }
+
+  /* contact icons */
+  footer ul li span svg {
+    width: 22px;
+    height: 22px;
+  }
+
+}
