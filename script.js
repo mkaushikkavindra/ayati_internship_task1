@@ -14,7 +14,7 @@ document.querySelectorAll(".learnmore").forEach(button => {
 });
 
 
-const posts = document.querySelectorAll("main section article");
+const posts = document.querySelectorAll("#postslist article");
 const buttons = document.querySelectorAll(".pagingbtn");
 
 const postsPerPage = 2;
