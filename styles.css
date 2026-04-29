@@ -155,6 +155,11 @@ article img{
     color:white;
 }
 
+nav ul li a.active{
+  background:black;
+  color:white;
+}
+
 #newsletter div{
     max-width: 500px;
     margin: 20px auto;
@@ -385,7 +390,11 @@ footer figure{
     height:130px;
 }
 
-
+#BLOG{
+  letter-spacing:20px;
+  font-weight:100;
+  text-align:center;
+}
 
 @media (max-width: 768px) {
 
