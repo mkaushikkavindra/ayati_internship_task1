@@ -136,6 +136,7 @@ article img{
 }
 
 
+
 #paging ul{
     margin:auto;
 }
@@ -457,6 +458,55 @@ footer figure{
   transform: rotate(-45deg) translate(6px, -6px);
 }
 
+@media (max-width:1448px){
+  footer{
+    flex-direction:column;
+    align-items:center;
+  }
+}
+
+@media (max-width: 1000px) {
+
+  article {
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 500px;
+  }
+
+  article,
+  article figure,
+  article div {
+    justify-self: stretch;
+    margin: 10px auto;      
+    padding: 0 20px;   
+    max-width: 500px;
+    flex-direction:column;
+  }
+
+  article figure{
+    height:100%;
+    align-items:center;
+  }
+
+  article:nth-child(even) figure,
+  article:nth-child(even) div {
+    grid-column: auto;
+    grid-row: auto;
+    justify-self: stretch; 
+  }
+
+  article figure {
+    width: 100%;
+  }
+
+  article img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+}
 
 @media (max-width: 768px) {
 
@@ -573,14 +623,20 @@ footer figure{
   }
 
   .newsletteremail {
-    flex-direction: row;
+    flex-direction: column; 
+    gap: 10px;
+    padding: 0;
   }
 
+  .newsletteremail input {
+    width: 100%;
+    padding: 12px;
+  }
 
   #subscribe {
-    white-space: nowrap;  
-    width:100%;
+    width: 100%;
     justify-content: center;
+    padding: 12px;
   }
 
   footer {
@@ -1139,6 +1195,7 @@ footer figure{
   footer article {
     gap: 12px;
     align-items: flex-start;
+    flex-direction:column;
   }
 
   footer img {
@@ -1164,6 +1221,7 @@ footer figure{
     width: 20px;
     height: 20px;
   }
+
 
 }
 
@@ -1642,18 +1700,26 @@ footer figure{
     font-size: 16px;
   }
 
-  /* keep inline (still enough width) */
+  #newsletter {
+    padding: 20px;
+  }
+
   .newsletteremail {
-    flex-direction: row;
+    flex-direction: column;   
+    gap: 12px;
+    padding: 0;
   }
 
   .newsletteremail input {
-    min-width: 0;
+    width: 100%;
+    padding: 14px;
+    font-size: 14px;
   }
 
   #subscribe {
-    white-space: nowrap;
-    padding: 14px 28px;
+    width: 100%;
+    justify-content: center;
+    padding: 14px;
     font-size: 14px;
   }
 
