@@ -1,3 +1,12 @@
+const menubtn = document.querySelector(".menuhb");
+const navMenu = document.querySelector("nav ul");
+
+
+
+menubtn.addEventListener("click", () => {
+  navMenu.classList.toggle("active");
+});
+
 document.querySelectorAll(".learnmore").forEach(button => {
   button.addEventListener("click", function(e) {
     e.preventDefault();
@@ -86,3 +95,4 @@ nextBtn.addEventListener("click", function (e) {
     });
   }
 });
+
