@@ -561,7 +561,7 @@ footer figure{
 
   nav {
     position:relative;
-    flex-direction: column;
+    flex-direction: row;
     gap: 15px;
     padding: 15px;
   }
@@ -741,7 +741,7 @@ footer figure{
 
   /* ===== NAVBAR ===== */
   nav {
-    flex-direction: column;
+    flex-direction: row;
     gap: 10px;
     padding: 10px;
   }
@@ -932,7 +932,7 @@ footer figure{
 
   /* ===== NAVBAR ===== */
   nav {
-    flex-direction: column;
+    flex-direction: row;
     gap: 12px;
     padding: 12px;
   }
@@ -1119,7 +1119,7 @@ footer figure{
 
   /* ===== NAVBAR ===== */
   nav {
-    flex-direction: column;
+    flex-direction: row;
     gap: 12px;
     padding: 12px;
   }
@@ -1305,7 +1305,7 @@ footer figure{
 
   /* ===== NAVBAR ===== */
   nav {
-    flex-direction: column;
+    flex-direction: row;
     gap: 15px;
     padding: 15px;
   }
@@ -1485,7 +1485,7 @@ footer figure{
 
   /* ===== NAVBAR ===== */
   nav {
-    flex-direction: column;
+    flex-direction: row;
     gap: 15px;
     padding: 15px;
   }
@@ -1665,7 +1665,7 @@ footer figure{
 
   /* ===== NAVBAR ===== */
   nav {
-    flex-direction: column;
+    flex-direction: row;
     gap: 15px;
     padding: 20px;
   }
