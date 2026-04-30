@@ -605,17 +605,27 @@ footer figure{
     font-size: 28px;
   }
 
+  #paging {
+    width: 100%;
+    margin: 20px auto;
+  }
+
   #paging ul {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;     
     gap: 10px;
-    margin: 20px 0;
+  }
+
+  #paging ul li {
+    display: block;
   }
 
   #paging ul li a {
-    width: 30px;
-    height: 30px;
-    font-size: 12px;
+    width: 35px;
+    height: 35px;
+    font-size: 13px;
   }
 
   #newsletter {
